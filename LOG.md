@@ -9,7 +9,7 @@
 - 完成：确定学习路线（Agent 应用工程方向，15 个月）；初始化学习仓库
 - 环境：Python 3.14.5 / Git 2.46 / VS Code 已就绪
 - 下周计划：
-  - [ ] 注册/确认 GitHub 账号，把本仓库推上去
-  - [ ] 学会 venv + pip 管理环境
+  - [x] 注册/确认 GitHub 账号，把本仓库推上去
+  - [x] 学会 venv + pip 管理环境（实操笔记见 `00-setup/02-venv-pip.md`）
   - [ ] Git 基本流程：clone / commit / push / branch
   - [ ] 开始《Python 编程：从入门到实践》第 1-4 章
