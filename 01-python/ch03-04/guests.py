@@ -12,4 +12,22 @@
 """
 
 # 在下面写你的代码：
+guests :list[str] = ["Alice", "Bob", "Charlie"]
+print("初始名单:", guests)
+# 末尾追加 1 位
+guests.append("David")
+print("追加后的名单:", guests)
 
+# 在中间位置插入 1 位
+guests.insert(2, "Eve")
+print("插入后的名单:", guests)
+
+# 删除 1 位
+guests.remove("Bob")
+print("删除后的名单:", guests)
+
+# 打印排序后的名单（不改变原列表）
+print("排序后的名单:", sorted(guests))
+
+# 打印名单总人数
+print("名单总人数:", len(guests))

@@ -11,4 +11,9 @@
 """
 
 # 在下面写你的代码：
-
+nums :list[int] = list(range(1, 21))
+print("前三个元素:", nums[0:3])
+print("后三个元素:", nums[-3:])
+print("中间一段（第 8 到第 12 个元素）:", nums[7:12])
+print("反转整个列表:", nums[::-1])
+print("所有偶数位置的元素:", nums[0::2])
