@@ -12,4 +12,4 @@
   - [x] 注册/确认 GitHub 账号，把本仓库推上去
   - [x] 学会 venv + pip 管理环境（实操笔记见 `00-setup/02-venv-pip.md`）
   - [x] Git 基本流程：clone / commit / push / branch（实操笔记见 `00-setup/03-git.md`）
-  - [ ] 开始《Python 编程：从入门到实践》第 1-4 章
+  - [x] 开始《Python 编程：从入门到实践》第 1-4 章（ch01-02、ch03-04 练习全部通过）
