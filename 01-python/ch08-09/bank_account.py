@@ -43,11 +43,11 @@ class SavingsAccount(BankAccount):
 
 if __name__ == "__main__":
     # 测试 BankAccount
-    account = BankAccount("张三", 1000)
+    account = BankAccount("张三", 0)
     account.deposit(1000)
     account.withdraw(300)
     account.withdraw(9999)  # 应提示不足
-    print(f"当前余额：{account.get_balance()} 元")  # 应为 700
+    print(f"当前余额：{account.get_balance()} 元")  
 
     # 测试 SavingsAccount
     savings_account = SavingsAccount("李四", 1000)

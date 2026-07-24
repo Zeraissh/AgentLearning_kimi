@@ -15,18 +15,21 @@
 
 # 在下面写你的代码：
 def greet(name: str, greeting: str = "你好") -> str:
-      return f"{greeting}, {name}!"
+   return f"{greeting}, {name}!"
 
 def total(*nums: int) -> int:
-      return sum(nums)
+   return sum(nums)
 
 def make_profile(name: str, **info) -> dict:
-      profile = {"name": name}
-      profile.update(info)
-      return profile
+   profile = {"name": name}
+   profile.update(info)
+   return profile
 
 def sort_by_second_element(lst: list[tuple]) -> list[tuple]:
-      return sorted(lst, key=lambda x: x[1])
+   #不适用 lambda，改写成普通函数
+   def get_second_element(item: tuple) -> int:
+         return item[1]
+   return sorted(lst, key=get_second_element)
 
 name = "小明"
 print(greet(name))
