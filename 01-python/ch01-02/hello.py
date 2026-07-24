@@ -1,15 +1,5 @@
-"""练习 1：f-string 自我介绍。
-
-任务：定义几个变量（名字、年龄、城市、正在学的东西），
-用 f-string 拼出一段自我介绍并打印。
-
-示例输出：
-    你好，我是小明，今年 25 岁，住在北京，正在学 Python。
-
-提示：
-    - f-string 写法：f"文字{变量}文字"
-    - 试着在 f-string 里做个小计算，比如 {age + 10}
-"""
-
-# 在下面写你的代码：
-
+name: str = "ZRX"
+age: int = 15
+city: str = "佛山"
+learning: str = "Agent开发"
+print(f"你好，我是{name}，今年 {age + 10} 岁，住在{city}，正在学 {learning}。")
