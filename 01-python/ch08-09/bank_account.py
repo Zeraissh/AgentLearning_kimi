@@ -16,4 +16,40 @@
 """
 
 # 在下面写你的代码：
+class BankAccount:
+    def __init__(self, owner: str, balance: float):
+        self.owner = owner
+        self.balance = balance
 
+    def deposit(self, amount: float):
+        self.balance += amount
+        print(f"{self.owner} 存入 {amount} 元，当前余额：{self.balance} 元")
+
+    def withdraw(self, amount: float):
+        if amount > self.balance:
+            print(f"{self.owner} 取款 {amount} 元失败，余额不足！当前余额：{self.balance} 元")
+        else:
+            self.balance -= amount
+            print(f"{self.owner} 取款 {amount} 元，当前余额：{self.balance} 元")
+
+    def get_balance(self) -> float:
+        return self.balance
+
+class SavingsAccount(BankAccount):
+    def add_interest(self, rate: float):
+        interest = self.balance * rate
+        self.balance += interest
+        print(f"{self.owner} 获得利息 {interest} 元，当前余额：{self.balance} 元")
+
+if __name__ == "__main__":
+    # 测试 BankAccount
+    account = BankAccount("张三", 1000)
+    account.deposit(1000)
+    account.withdraw(300)
+    account.withdraw(9999)  # 应提示不足
+    print(f"当前余额：{account.get_balance()} 元")  # 应为 700
+
+    # 测试 SavingsAccount
+    savings_account = SavingsAccount("李四", 1000)
+    savings_account.add_interest(0.03)  # 加 3% 利息
+    print(f"当前余额：{savings_account.get_balance()} 元")  # 应为 1030

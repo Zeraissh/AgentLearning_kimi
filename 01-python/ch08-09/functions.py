@@ -14,4 +14,25 @@
 """
 
 # 在下面写你的代码：
+def greet(name: str, greeting: str = "你好") -> str:
+      return f"{greeting}, {name}!"
 
+def total(*nums: int) -> int:
+      return sum(nums)
+
+def make_profile(name: str, **info) -> dict:
+      profile = {"name": name}
+      profile.update(info)
+      return profile
+
+def sort_by_second_element(lst: list[tuple]) -> list[tuple]:
+      return sorted(lst, key=lambda x: x[1])
+
+name = "小明"
+print(greet(name))
+print(greet(name, "早上好"))
+print(total(1, 2))
+print(total(1, 2, 3, 4, 5))
+print(total())
+print(make_profile("小明", age=15, city="佛山"))
+print(sort_by_second_element([(1, 3), (2, 2), (3, 1)]))
