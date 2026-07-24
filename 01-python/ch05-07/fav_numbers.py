@@ -9,4 +9,16 @@
 """
 
 # 在下面写你的代码：
+fav_numbers :dict[str, int] = {
+    "Alice": 7,
+    "Bob": 3,
+    "Charlie": 9,
+    "David": 5,
+    "Eve": 2
+}
+for name, num in fav_numbers.items():
+    print(f"{name}的幸运数字是 {num}")
 
+# 查一次不存在的名字
+print("Frank的幸运数字是", fav_numbers.get("Frank", "未知"))
+# print(fav_numbers["Frank"])  # 直接用 [] 查询会报错

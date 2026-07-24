@@ -20,4 +20,13 @@
 """
 
 # 在下面写你的代码：
+results :dict[str, int] = {}
+while True:
+    lang = input("你最喜欢的编程语言是什么？(输入 q 退出) ")
+    if lang == "q":
+        break
+    results[lang] = results.get(lang, 0) + 1
 
+print("--- 统计结果 ---")
+for lang, count in sorted(results.items(), key=lambda x: x[1], reverse=True):
+    print(f"{lang}: {count} 票")
