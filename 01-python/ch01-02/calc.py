@@ -15,4 +15,7 @@
 """
 
 # 在下面写你的代码：
-
+age :int = 15
+print("10 年后我", age + 10, "岁")
+print("距离 100 岁还有", 100 - age, "年")
+print("age 的类型是", type(age))

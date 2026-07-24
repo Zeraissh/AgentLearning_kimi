@@ -13,4 +13,8 @@
 """
 
 # 在下面写你的代码：
+name :str = "zErAiSsH"
+print(name.lower())
+print(name.upper())
+print(name.title())
 
